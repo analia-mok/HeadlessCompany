@@ -34,5 +34,13 @@
       * Bio
       * [Section with person's recent blog posts]
 * __Careers__
-  * (Need a recent careers block for about page "We're Hiring!")
 * __Contact Us__
+
+## Blocks/Widgets
+* Related Posts
+  * By Category
+  * By Author
+* Related Ebooks
+* Related White Papers
+* Latest Blog Posts
+* Recent Career Postings
