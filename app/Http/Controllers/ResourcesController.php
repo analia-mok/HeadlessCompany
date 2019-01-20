@@ -20,11 +20,25 @@ class ResourcesController extends Controller
 
     public function index()
     {
+        // TODO: Encapsulate into helper class.
         $query = new \Contentful\Delivery\Query();
         $query->setContentType('whitePaper')
-            ->orderBy('sys.updatedAt');
-        $white_papers = $this->client->getEntries();
+            ->orderBy('sys.updatedAt')
+            ->setInclude(3);
+        $white_paper_entries = $this->client->getEntries($query);
+        $white_papers = [];
 
-        return view('resources.index', ['entries' => $white_papers]);
+        // foreach ($white_paper_entries as $entry) {
+        //     $white_papers[] = [
+        //         'title'         => $entry['title'],
+        //         'slug'          => $entry->getSlug(),
+        //         'header'        => $entry->getContentHeader(),
+        //         'summary'       => $entry->getSummary(),
+        //         'pdf'           => $entry->getPdf(),
+        //         'featuredImg'   => $entry->getFeaturedImage(),
+        //     ];
+        // }
+
+        return view('resources.index', ['white_papers' => $white_paper_entries]);
     }
 }
