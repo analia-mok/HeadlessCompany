@@ -10556,6 +10556,10 @@ nav .navbar ul .dropdown-item a {
   font-weight: 600;
 }
 
+nav .navbar ul li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
 nav .navbar .nav-item {
   padding-left: 2rem;
 }

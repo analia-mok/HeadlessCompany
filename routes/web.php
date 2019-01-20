@@ -12,4 +12,6 @@
 */
 
 // TODO: Fix Later
-Route::get('/', 'ResourcesController@index');
+Route::get('/', 'PageController@index');
+Route::get('/resources', 'ResourcesController@index');
+Route::get('/{page}', 'PageController@index');

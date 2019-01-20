@@ -15,6 +15,10 @@ nav {
                 font-size: 1.8rem;
                 font-weight: $semi-bold;
             }
+
+            li.dropdown:hover > .dropdown-menu {
+                display: block;
+            }
         }
 
         .nav-item {
