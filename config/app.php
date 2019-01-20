@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Vessel\VesselServiceProvider::class,
 
         /*
          * Application Service Providers...
