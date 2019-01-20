@@ -39,6 +39,9 @@ class ResourcesController extends Controller
         //     ];
         // }
 
-        return view('resources.index', ['white_papers' => $white_paper_entries]);
+        return view('resources.index', [
+            'white_papers' => $white_paper_entries,
+            'renderer'     => $renderer = new \Contentful\RichText\Renderer(),
+        ]);
     }
 }
