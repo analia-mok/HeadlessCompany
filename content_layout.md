@@ -22,6 +22,8 @@
 * __About__
   * _How Started / Origin_
   * _What We Do_
+    * cards - tech + short description
+    * Maybe match with expertise
   * _Our Values_
   * _Team_
     * Leadership

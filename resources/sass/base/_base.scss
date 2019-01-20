@@ -1,0 +1,40 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $white;
+}
+
+main{
+    padding: 5rem 0;
+}
+
+h1 {
+    color: $blue;
+    font-family: $secondary-font;
+    font-size: 4rem;
+    font-weight: $bold;
+}
+
+h2, h3 {
+    font-family: $secondary-font;
+    font-weight: $semi-bold;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p, span {
+    font-family: $primary-font;
+    color: $darker-grey;
+}
