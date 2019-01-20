@@ -9,7 +9,9 @@
   <title>{{ config('app.name', 'Laravel') }}</title>
 </head>
 <body>
-
+  <main class="container">
+    @yield('body')
+  </main>
   <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

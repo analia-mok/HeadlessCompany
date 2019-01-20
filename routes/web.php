@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// TODO: Fix Later
+Route::get('/', 'ResourcesController@index');
