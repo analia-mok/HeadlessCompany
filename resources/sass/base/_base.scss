@@ -19,11 +19,13 @@ h1 {
     font-family: $secondary-font;
     font-size: 4rem;
     font-weight: $bold;
+    margin-bottom: 5rem;
 }
 
 h2, h3 {
     font-family: $secondary-font;
     font-weight: $semi-bold;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -32,9 +34,26 @@ h2 {
 
 h3 {
     font-size: 2.4rem;
+    color: $grey;
 }
 
 p, span {
     font-family: $primary-font;
     color: $darker-grey;
+}
+
+.button {
+    background-color: $waterfall;
+    color: $white;
+    display: inline-block;
+    font-family: $secondary-font;
+    font-weight: $semi-bold;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $green;
+        color: $white;
+        text-decoration: none;
+    }
 }

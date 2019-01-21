@@ -10516,12 +10516,14 @@ h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 4rem;
   font-weight: 700;
+  margin-bottom: 5rem;
 }
 
 h2,
 h3 {
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -10530,12 +10532,29 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+  color: #555;
 }
 
 p,
 span {
   font-family: "Open Sans", sans-serif;
   color: #2D2D2D;
+}
+
+.button {
+  background-color: #38ADA9;
+  color: #FAFAFA;
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #079992;
+  color: #FAFAFA;
+  text-decoration: none;
 }
 
 nav .navbar {
@@ -10569,5 +10588,55 @@ nav .navbar .nav-item {
   content: "";
   display: block;
   height: 10px;
+}
+
+.card {
+  height: 100%;
+}
+
+.card .card-body h3 {
+  margin: 0.8rem 0;
+  color: #4A69BD;
+}
+
+.card__container {
+  margin-bottom: 5rem;
+}
+
+.card__container > div {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .card__container > div {
+    margin-bottom: 0;
+  }
+}
+
+.card__container__button-holder a {
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.card__category {
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 3px;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card__content {
+  font-family: "Open Sans", sans-serif;
+  color: #2D2D2D;
+  margin-bottom: 2rem;
+}
+
+.card__link {
+  color: #38ADA9;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 

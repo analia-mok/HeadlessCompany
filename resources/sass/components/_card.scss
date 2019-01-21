@@ -1,0 +1,48 @@
+.card {
+    height: 100%;
+    .card-body {
+        h3 {
+            margin: 0.8rem 0;
+            color: $blue;
+        }
+    }
+
+    &__container {
+        margin-bottom: 5rem;
+        & > div {
+            margin-bottom: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+        }
+        &__button-holder {
+            a {
+                width: 100%;
+                padding: 1.5rem 1rem;
+            }
+        }
+    }
+
+    &__category {
+        font-family: $secondary-font;
+        letter-spacing: 3px;
+        color: $grey;
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        font-family: $primary-font;
+        color: $darker-grey;
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        color: $waterfall;
+        font-family: $secondary-font;
+        font-weight: $semi-bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
