@@ -4,43 +4,43 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Contentful\Delivery\Client as DeliveryClient; // TODO: Will be moved to own Helper Method
+use App\Helpers\ContentfulQuery as CQuery;
 
 class ResourcesController extends Controller
 {
 
     /**
-     * @var DeliveryClient
+     * @var CQuery
      */
-    private $client;
+    private $CQUERY;
 
-    public function __construct(DeliveryClient $client)
+    public function __construct(CQuery $query)
     {
-        $this->client = $client;
+        $this->CQUERY = $query;
     }
 
     public function index()
     {
-        // TODO: Encapsulate into helper class.
-        $query = new \Contentful\Delivery\Query();
-        $query->setContentType('whitePaper')
-            ->orderBy('sys.updatedAt');
-        $white_paper_entries = $this->client->getEntries($query);
-
-        $white_papers = [];
-
-        foreach ($white_paper_entries as $wp) {
-            if (count($white_papers) >= 3) {
-                break;
-            }
-
-            $white_papers[] = $wp;
-        }
-
-        // TODO: Manually limit Contentful Resource Array
+        $white_paper_entries = $this->CQUERY->getEntriesByContentType('whitePaper');
+        $white_papers = $this->limitResourceArray($white_paper_entries);
 
         return view('resources.index', [
             'white_papers' => $white_papers,
             'renderer'     => $renderer = new \Contentful\RichText\Renderer(),
         ]);
+    }
+
+    public function limitResourceArray($entries)
+    {
+        $short_entries = [];
+        foreach ($entries as $entry) {
+            if (count($short_entries) >= 3) {
+                break;
+            }
+
+            $short_entries[] = $entry;
+        }
+
+        return $short_entries;
     }
 }
