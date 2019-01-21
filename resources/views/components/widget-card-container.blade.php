@@ -8,7 +8,7 @@
             <h3 class="card__title">{{ $entry->title }}</h3>
             <div class="card__content">
                 @php
-                $output = $renderer->render($entry->summary);
+                $output = isset($entry->summary) ? $renderer->render($entry->summary) : $renderer->render($entry->content);
                 echo str_limit(strip_tags($output), 250);
                 @endphp
             </div>
