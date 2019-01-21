@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Contentful\Delivery\Client as DeliveryClient; // TODO: Will be moved to own Helper Method
 use App\Helpers\ContentfulQuery as CQuery;
 
 class ResourcesController extends Controller
@@ -21,12 +20,23 @@ class ResourcesController extends Controller
 
     public function index()
     {
+        // White Papers
         $white_paper_entries = $this->CQUERY->getEntriesByContentType('whitePaper');
         $white_papers = $this->limitResourceArray($white_paper_entries);
 
+        // Case Studies
+        $case_study_entries = $this->CQUERY->getEntriesByContentType('caseStudy');
+        $case_studies = $this->limitResourceArray($case_study_entries);
+
+        // Ebooks
+        $ebook_entries = $this->CQUERY->getEntriesByContentType('ebook');
+        $ebooks = $this->limitResourceArray($ebook_entries);
+
         return view('resources.index', [
-            'white_papers' => $white_papers,
-            'renderer'     => $renderer = new \Contentful\RichText\Renderer(),
+            'white_papers'  => $white_papers,
+            'case_studies'  => $case_studies,
+            'ebooks'        => $ebooks,
+            'renderer'      => $renderer = new \Contentful\RichText\Renderer(),
         ]);
     }
 

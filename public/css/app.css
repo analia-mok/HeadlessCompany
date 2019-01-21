@@ -10615,9 +10615,17 @@ nav .navbar .nav-item {
   }
 }
 
+.card__container__button-holder {
+  margin-bottom: 5rem;
+}
+
 .card__container__button-holder a {
   width: 100%;
   padding: 1.5rem 1rem;
+}
+
+.card__container__nocontent {
+  font-size: 1.8rem;
 }
 
 .card__category {
