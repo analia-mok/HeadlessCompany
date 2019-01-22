@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function index($page)
+    public function index($page = '')
     {
         if ($page === '/') {
-            return view('welcome'); // TODO
+            return view('pages.index'); // TODO
         }
 
-        return view('welcome'); // TODO
+        return view('pages.index'); // TODO
     }
 }
