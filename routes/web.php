@@ -11,7 +11,6 @@
 |
 */
 
-// TODO: Fix Later
 Route::get('/', 'PageController@index');
 Route::get('/resources', 'ResourcesController@index');
 
@@ -20,5 +19,8 @@ Route::get('/white-paper/{slug}', 'WhitePapersController@show');
 
 Route::get('/case-studies', 'CaseStudiesController@index');
 Route::get('/case-study/{slug}', 'CaseStudiesController@show');
+
+Route::get('/ebooks', 'EbooksController@index');
+Route::get('/ebook/{slug}', 'EbooksController@show');
 
 Route::get('/{page}', 'PageController@index');
