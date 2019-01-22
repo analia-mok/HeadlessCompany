@@ -10658,11 +10658,30 @@ nav .navbar .nav-item {
   text-transform: uppercase;
 }
 
+.single__subheader {
+  margin-top: 4rem;
+}
+
 .single__img {
   width: 100%;
 }
 
 .single__content {
   margin-top: 4rem;
+}
+
+.single__highlights {
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.single__highlights__item {
+  margin-right: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #079992;
+  color: #FAFAFA;
+  font-weight: 600;
 }
 
