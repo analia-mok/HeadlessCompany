@@ -31,6 +31,10 @@
         &__nocontent {
             font-size: 1.8rem;
         }
+
+        &--multi > div{
+            margin-bottom: 3rem;
+        }
     }
 
     &__category {

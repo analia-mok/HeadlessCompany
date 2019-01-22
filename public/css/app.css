@@ -10636,6 +10636,10 @@ nav .navbar .nav-item {
   font-size: 1.8rem;
 }
 
+.card__container--multi > div {
+  margin-bottom: 3rem;
+}
+
 .card__category {
   font-family: "Work Sans", sans-serif;
   letter-spacing: 3px;

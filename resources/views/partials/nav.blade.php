@@ -20,7 +20,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Case Studies</a>
-                        <a class="dropdown-item" href="#">White Papers</a>
+                        <a class="dropdown-item" href="/white-papers">White Papers</a>
                         <a class="dropdown-item" href="#">Ebooks</a>
                     </div>
                 </li>
