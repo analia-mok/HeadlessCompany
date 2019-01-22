@@ -24,4 +24,25 @@ class ContentfulQuery
 
         return $this->client->getEntries($query);
     }
+
+    public function getEntry($contentType, $slug)
+    {
+        $query = new \Contentful\Delivery\Query();
+        $query->setContentType($contentType)
+            ->where('fields.slug', $slug);
+
+        try {
+            $results = $this->client->getEntries($query);
+
+            if (count($results) <= 0) {
+                return null;
+            } else {
+                return $results[0];
+            }
+        } catch (\Contentful\Core\Exception\NotFoundException $exception) {
+            return null;
+        } catch (\Contentful\Core\Exception\BadRequestException $exception) {
+            return null;
+        }
+    }
 }

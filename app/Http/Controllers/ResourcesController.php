@@ -36,7 +36,7 @@ class ResourcesController extends Controller
             'white_papers'  => $white_papers,
             'case_studies'  => $case_studies,
             'ebooks'        => $ebooks,
-            'renderer'      => $renderer = new \Contentful\RichText\Renderer(),
+            'renderer'      => new \Contentful\RichText\Renderer(),
         ]);
     }
 

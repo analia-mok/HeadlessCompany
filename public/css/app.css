@@ -10516,6 +10516,9 @@ h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 4rem;
   font-weight: 700;
+}
+
+h1.page-title {
   margin-bottom: 5rem;
 }
 
@@ -10653,5 +10656,13 @@ nav .navbar .nav-item {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.single__img {
+  width: 100%;
+}
+
+.single__content {
+  margin-top: 4rem;
 }
 

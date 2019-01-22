@@ -15,3 +15,6 @@
 Route::get('/', 'PageController@index');
 Route::get('/resources', 'ResourcesController@index');
 Route::get('/{page}', 'PageController@index');
+
+Route::get('/case-studies', 'CaseStudiesController@index');
+Route::get('/case-study/{slug}', 'CaseStudiesController@show');

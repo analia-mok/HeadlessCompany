@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('body')
-<h1>Resources</h1>
+<h1 class="page-title">Resources</h1>
 
 <h3>Case Studies</h3>
 <div class="row card__container">
