@@ -10578,6 +10578,11 @@ nav .navbar ul .dropdown-item a {
   font-weight: 600;
 }
 
+nav .navbar ul .nav-item a:hover,
+nav .navbar ul .dropdown-item a:hover {
+  color: #4A69BD;
+}
+
 nav .navbar ul li.dropdown:hover > .dropdown-menu {
   display: block;
 }

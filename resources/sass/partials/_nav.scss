@@ -14,6 +14,10 @@ nav {
                 color: $darker-grey;
                 font-size: 1.8rem;
                 font-weight: $semi-bold;
+
+                &:hover {
+                    color: $blue;
+                }
             }
 
             li.dropdown:hover > .dropdown-menu {
