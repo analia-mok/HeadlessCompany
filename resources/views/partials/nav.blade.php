@@ -19,9 +19,9 @@
                         Resources
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Case Studies</a>
+                        <a class="dropdown-item" href="/case-studies">Case Studies</a>
                         <a class="dropdown-item" href="/white-papers">White Papers</a>
-                        <a class="dropdown-item" href="#">Ebooks</a>
+                        <a class="dropdown-item" href="/ebooks">Ebooks</a>
                     </div>
                 </li>
                 <li class="nav-item">
