@@ -30,7 +30,7 @@ class CaseStudiesController extends Controller
             abort(404);
         }
 
-        return view('resources.single-case-study', [
+        return view('resources.case-studies.show', [
             'entry'     => $entry,
             'renderer'  => new \Contentful\RichText\Renderer(),
         ]);
