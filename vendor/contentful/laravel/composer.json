@@ -1,0 +1,46 @@
+{
+    "name": "contentful/laravel",
+    "description": "Integrates the Contentful PHP SDK with Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.0",
+        "laravel/framework": "~5.4",
+        "contentful/contentful": "^4.0",
+        "contentful/core": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0|^7.0",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Contentful\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Contentful\\Tests\\Laravel\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-quick-fail": "php vendor/bin/phpunit --stop-on-error --stop-on-failure -v",
+        "lint-syntax": "$([ -f php-cs-fixer.phar ] && echo \"php php-cs-fixer.phar\" || echo \"php-cs-fixer\") fix --dry-run --stop-on-violation -v",
+        "lint-static-analysis": "$([ -f phpstan.phar ] && echo \"php phpstan.phar\" || echo \"phpstan\") analyse --level=max src/",
+        "release": "php vendor/contentful/core/scripts/release.php"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Contentful\\Laravel\\ContentfulServiceProvider"
+            ],
+            "aliases": {
+                "ContentfulDelivery": "Contentful\\Laravel\\Facades\\ContentfulDelivery"
+            }
+        }
+    }
+}
