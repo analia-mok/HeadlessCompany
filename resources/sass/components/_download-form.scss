@@ -1,0 +1,44 @@
+.download-form {
+    background-color: $pure-white;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+    padding: 3rem;
+
+    h3 {
+        position: relative;
+        padding-bottom: 1.3rem;
+        margin-bottom: 2rem;
+        &:after {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            content: "";
+            height: 5px;
+            width: 30%;
+            background-color: $orange;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        select {
+            display: block;
+            border: 1px solid $light-grey;
+            padding: 1rem 2rem;
+            margin-bottom: 1rem;
+            font-family: $primary-font;
+            color: $darker-grey;
+            font-size: 1.6rem;
+        }
+
+        .button {
+            padding: 1rem;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+    }
+}
