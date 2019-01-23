@@ -10552,6 +10552,8 @@ span {
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .button:hover {
@@ -10669,6 +10671,7 @@ nav .navbar .nav-item {
 
 .single__subheader {
   margin-top: 4rem;
+  color: #333333;
 }
 
 .single__img {
@@ -10692,5 +10695,57 @@ nav .navbar .nav-item {
   background-color: #079992;
   color: #FAFAFA;
   font-weight: 600;
+}
+
+.download-form {
+  background-color: #FFFFFF;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  padding: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .download-form {
+    margin-top: 3rem;
+  }
+}
+
+.download-form h3 {
+  position: relative;
+  padding-bottom: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.download-form h3:after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: "";
+  height: 5px;
+  width: 30%;
+  background-color: #FA983A;
+}
+
+.download-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-form form input[type=text],
+.download-form form input[type=email],
+.download-form form input[type=tel],
+.download-form form select {
+  display: block;
+  border: 1px solid #C4C4C4;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #2D2D2D;
+  font-size: 1.6rem;
+}
+
+.download-form form .button {
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 

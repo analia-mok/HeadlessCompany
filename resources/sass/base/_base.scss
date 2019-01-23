@@ -53,6 +53,8 @@ p, span {
     font-weight: $semi-bold;
     text-align: center;
     text-decoration: none;
+    border: none;
+    outline: none;
 
     &:hover {
         background-color: $green;
