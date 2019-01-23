@@ -10699,8 +10699,14 @@ nav .navbar .nav-item {
 
 .download-form {
   background-color: #FFFFFF;
-  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
   padding: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .download-form {
+    margin-top: 3rem;
+  }
 }
 
 .download-form h3 {

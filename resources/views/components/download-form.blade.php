@@ -14,6 +14,6 @@
             <option value="it">Technology/ IT</option>
             <option value="developer">Developer</option>
         </select>
-        <input type="submit" value="Download Now" class="button">
+        <input type="submit" value="Download Now" class="button" disabled>
     </form>
 </div>

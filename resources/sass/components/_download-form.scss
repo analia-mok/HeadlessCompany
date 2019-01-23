@@ -1,7 +1,11 @@
 .download-form {
     background-color: $pure-white;
-    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
     padding: 3rem;
+
+    @include media-breakpoint-down(sm){
+        margin-top: 3rem;
+    }
 
     h3 {
         position: relative;
