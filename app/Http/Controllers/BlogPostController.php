@@ -36,6 +36,15 @@ class BlogPostController extends Controller
 
     public function show($slug)
     {
-        // TODO
+        $entry = $this->CQUERY->getEntry('blogPost', $slug);
+
+        if ($entry === null) {
+            abort(404);
+        }
+
+        return view('blog.show', [
+            'entry'     => $entry,
+            'renderer'  => new \Contentful\RichText\Renderer(),
+        ]);
     }
 }

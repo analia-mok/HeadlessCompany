@@ -10744,6 +10744,7 @@ nav .navbar .nav-item {
   margin-top: 4rem;
 }
 
+.single__categories,
 .single__highlights {
   display: flex;
   margin-bottom: 0;
@@ -10751,12 +10752,17 @@ nav .navbar .nav-item {
   list-style: none;
 }
 
+.single__categories__item,
 .single__highlights__item {
   margin-right: 1rem;
   padding: 0.8rem 2rem;
   background-color: #079992;
   color: #FAFAFA;
   font-weight: 600;
+}
+
+.single__categories {
+  margin-top: 4rem;
 }
 
 .download-form {

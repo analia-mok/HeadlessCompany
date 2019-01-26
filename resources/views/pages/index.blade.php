@@ -11,5 +11,6 @@
     <li><a href="/white-papers">White Papers</a></li>
     <li><a href="/case-studies">Case Studies</a></li>
     <li><a href="/ebooks">Ebooks</a></li>
+    <li><a href="/blog">Blog</a></li>
 </ul>
 @endsection
