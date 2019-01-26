@@ -10835,7 +10835,7 @@ nav .navbar .nav-item {
   color: #FAFAFA;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
 }
 
 .home__hero__content p {
