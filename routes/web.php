@@ -23,4 +23,7 @@ Route::get('/case-study/{slug}', 'CaseStudiesController@show');
 Route::get('/ebooks', 'EbooksController@index');
 Route::get('/ebook/{slug}', 'EbooksController@show');
 
+Route::get('/blog', 'BlogPostController@index');
+Route::get('/blog/{slug}', 'BlogPostController@show');
+
 Route::get('/{page}', 'PageController@index');

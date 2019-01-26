@@ -10616,6 +10616,53 @@ nav .navbar .nav-item {
   color: #4A69BD;
 }
 
+.card--full-width {
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
+  padding: 0;
+}
+
+.card--full-width__img-container {
+  flex: 1 1 40%;
+  position: relative;
+}
+
+.card--full-width__img-container:before {
+  display: block;
+  content: " ";
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.card--full-width__img-container > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card--full-width__img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.card--full-width .card__content {
+  background-color: #FFFFFF;
+  flex: 1 1 60%;
+  margin-bottom: 0;
+  padding: 2rem;
+}
+
+.card--full-width .card__content__body {
+  margin-bottom: 2rem;
+}
+
+.card--full-width .card__title {
+  color: #4A69BD;
+}
+
 .card__container {
   margin-bottom: 5rem;
 }
