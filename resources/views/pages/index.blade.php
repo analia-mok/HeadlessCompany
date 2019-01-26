@@ -12,4 +12,18 @@
         <img src="{{ $hero_img->getFile()->getUrl() }}" alt="Headless Company Logo" class="home__hero__img">
     </div>
 </div>
+<h1 class="home__section-header">{{ $page->servicesTitle }}</h1>
+<div class="row">
+    @if( count($services) > 0 )
+        @foreach($services as $service)
+            <div class="col-xs-12 col-lg-4">
+                <div class="home__services-card">
+                    <img src="{{ $service->icon->getFile()->getUrl() }}" alt="{{ $service->name }}">
+                    <h3 class="home__services-card__title">{{ $service->name }}</h3>
+                    <p>{{ $service->description }}</p>
+                </div>
+            </div>
+        @endforeach
+    @endif
+</div>
 @endsection
