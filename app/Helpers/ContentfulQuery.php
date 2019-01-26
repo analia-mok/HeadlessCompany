@@ -20,7 +20,8 @@ class ContentfulQuery
     {
         $query = new \Contentful\Delivery\Query();
         $query->setContentType($contentType)
-            ->orderBy('sys.updatedAt');
+            ->orderBy('sys.updatedAt')
+            ->setInclude(2);
 
         return $this->client->getEntries($query);
     }

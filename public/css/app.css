@@ -10694,6 +10694,10 @@ nav .navbar .nav-item {
   margin-bottom: 3rem;
 }
 
+.card__container__categories span:not(:last-child):after {
+  content: ",";
+}
+
 .card__category {
   font-family: "Work Sans", sans-serif;
   letter-spacing: 3px;

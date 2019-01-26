@@ -68,6 +68,12 @@
         &--multi > div{
             margin-bottom: 3rem;
         }
+
+        &__categories {
+            span:not(:last-child):after {
+                content: ",";
+            }
+        }
     }
 
     &__category {
