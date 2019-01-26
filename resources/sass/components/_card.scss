@@ -17,6 +17,7 @@
         background-color: $pure-white;
         box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.25);
         padding: 0;
+
         &__img-container {
             flex: 1 1 40%;
             @include aspect-ratio(16,9);
@@ -41,6 +42,15 @@
         .card__title {
             color: $blue;
         }
+
+        @include media-breakpoint-down(sm) {
+            flex-wrap: wrap;
+            &__img-container,
+            .card__content {
+                flex: 1 1 100%;
+            }
+        }
+
     }
 
     // Card Components.

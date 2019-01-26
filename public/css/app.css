@@ -10663,6 +10663,17 @@ nav .navbar .nav-item {
   color: #4A69BD;
 }
 
+@media (max-width: 767.98px) {
+  .card--full-width {
+    flex-wrap: wrap;
+  }
+
+  .card--full-width__img-container,
+  .card--full-width .card__content {
+    flex: 1 1 100%;
+  }
+}
+
 .card__container {
   margin-bottom: 5rem;
 }
