@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', 'HomeController@index');
 Route::get('/resources', 'ResourcesController@index');
 
 Route::get('/white-papers', 'WhitePapersController@index');
@@ -25,5 +25,3 @@ Route::get('/ebook/{slug}', 'EbooksController@show');
 
 Route::get('/blog', 'BlogPostController@index');
 Route::get('/blog/{slug}', 'BlogPostController@show');
-
-Route::get('/{page}', 'PageController@index');

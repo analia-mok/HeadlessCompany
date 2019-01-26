@@ -46,4 +46,15 @@ class ContentfulQuery
             return null;
         }
     }
+
+    public function getAsset($asset_id)
+    {
+        try {
+            $asset = $this->client->getAsset($asset_id);
+        } catch (\Contentful\Core\Exception\NotFoundException $exception) {
+            return null;
+        } catch (Exception $ex) {
+            return null;
+        }
+    }
 }
