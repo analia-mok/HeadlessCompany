@@ -26,11 +26,12 @@ class HomeController extends Controller
         }
 
         $page = $result[0];
-        $headless_img = $this->CQUERY->getAsset('n0utBXd2zRAIRlfBCIN01');
+        $headless_img = $this->CQUERY->getAsset('n0utBXd2zRAIRlfBCIN0z');
 
         $data = [
-            'page'  => $page,
+            'page'      => $page,
             'hero_img'  => $headless_img,
+            'services'  => $page->services,
         ];
 
         return view('pages.index', $data);

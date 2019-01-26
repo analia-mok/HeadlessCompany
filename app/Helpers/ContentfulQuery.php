@@ -51,6 +51,7 @@ class ContentfulQuery
     {
         try {
             $asset = $this->client->getAsset($asset_id);
+            return $asset;
         } catch (\Contentful\Core\Exception\NotFoundException $exception) {
             return null;
         } catch (Exception $ex) {

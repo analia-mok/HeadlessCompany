@@ -10817,3 +10817,35 @@ nav .navbar .nav-item {
   cursor: pointer;
 }
 
+.home__hero {
+  background-color: #4A69BD;
+  padding: 0 5rem;
+  position: relative;
+}
+
+.home__hero__content {
+  position: relative;
+  text-align: center;
+  top: 20%;
+  z-index: 5;
+}
+
+.home__hero__content h1,
+.home__hero__content p {
+  color: #FAFAFA;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.home__hero__content p {
+  font-size: 2.8rem;
+}
+
+.home__hero__img {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  height: auto;
+}
+
