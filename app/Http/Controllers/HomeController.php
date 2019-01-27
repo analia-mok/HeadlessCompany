@@ -30,12 +30,14 @@ class HomeController extends Controller
 
         // Preparing Call To Actions
         $resources = $this->formatResourcesCTA();
+        $posts = $this->CQUERY->getEntriesByContentType('blogPost', 4);
 
         $data = [
             'page'      => $page,
             'hero_img'  => $headless_img,
             'services'  => $page->services,
             'resources' => $resources,
+            'posts'     => $posts,
         ];
 
         return view('pages.index', $data);

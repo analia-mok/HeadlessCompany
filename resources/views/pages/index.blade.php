@@ -32,16 +32,30 @@
 <div class="row">
     <div class="col-xs-12 col-md-12">
         @component('components.landing-cta', [
-            'entries'   => $resources,
-            'align'     => 'right'
+                'entries'   => $resources,
+                'align'     => 'right'
             ])
             @slot('description')
             <h2>{{ $page->resourcesTitle }}</h2>
             <p>{{ $page->resourcesDescription }}</p>
+            <a href="/resources" class="button button--inverse">Read Our Resources</a>
             @endslot
         @endcomponent
     </div>
 </div>
 {{-- Latest Blog Posts CTA --}}
-<div class="row"></div>
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        @component('components.landing-cta', [
+            'entries'   => $posts,
+            'align'     => 'left'
+        ])
+            @slot('description')
+                <h2>{{ $page->blogTitle }}</h2>
+                <p>{{ $page->blogDescription }}</p>
+                <a href="/blog" class="button button--inverse">Read Our Blog</a>
+            @endslot
+        @endcomponent
+    </div>
+</div>
 @endsection
