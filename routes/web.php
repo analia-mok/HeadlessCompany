@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', 'HomeController@index');
 Route::get('/resources', 'ResourcesController@index');
 
 Route::get('/white-papers', 'WhitePapersController@index');
@@ -23,4 +23,5 @@ Route::get('/case-study/{slug}', 'CaseStudiesController@show');
 Route::get('/ebooks', 'EbooksController@index');
 Route::get('/ebook/{slug}', 'EbooksController@show');
 
-Route::get('/{page}', 'PageController@index');
+Route::get('/blog', 'BlogPostController@index');
+Route::get('/blog/{slug}', 'BlogPostController@show');

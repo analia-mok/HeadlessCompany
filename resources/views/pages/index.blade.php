@@ -3,13 +3,59 @@
 @extends('layout')
 
 @section('body')
-<h1>Home Page</h1>
-<p>Under construction</p>
-<h2>Implemented Pages</h2>
-<ul>
-    <li><a href="/resources">Resources</a></li>
-    <li><a href="/white-papers">White Papers</a></li>
-    <li><a href="/case-studies">Case Studies</a></li>
-    <li><a href="/ebooks">Ebooks</a></li>
-</ul>
+{{-- Hero --}}
+<div class="row">
+    <div class="col-xs-12 col-md-12 home__hero">
+        <div class="home__hero__content">
+            <h1>{{ $page->heroTitle }}</h1>
+            <p class="home__hero__content__subtitle">{{ $page->heroSubtitle }}</p>
+        </div>
+        <img src="{{ $hero_img->getFile()->getUrl() }}" alt="Headless Company Logo" class="home__hero__img">
+    </div>
+</div>
+<h1 class="home__section-header">{{ $page->servicesTitle }}</h1>
+{{-- Services --}}
+<div class="row">
+    @if( count($services) > 0 )
+        @foreach($services as $service)
+            <div class="col-xs-12 col-lg-4">
+                <div class="home__services-card">
+                    <img src="{{ $service->icon->getFile()->getUrl() }}" alt="{{ $service->name }}">
+                    <h3 class="home__services-card__title">{{ $service->name }}</h3>
+                    <p>{{ $service->description }}</p>
+                </div>
+            </div>
+        @endforeach
+    @endif
+</div>
+{{-- Resources CTA --}}
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        @component('components.landing-cta', [
+                'entries'   => $resources,
+                'align'     => 'right'
+            ])
+            @slot('description')
+            <h2>{{ $page->resourcesTitle }}</h2>
+            <p>{{ $page->resourcesDescription }}</p>
+            <a href="/resources" class="button button--inverse">Read Our Resources</a>
+            @endslot
+        @endcomponent
+    </div>
+</div>
+{{-- Latest Blog Posts CTA --}}
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        @component('components.landing-cta', [
+            'entries'   => $posts,
+            'align'     => 'left'
+        ])
+            @slot('description')
+                <h2>{{ $page->blogTitle }}</h2>
+                <p>{{ $page->blogDescription }}</p>
+                <a href="/blog" class="button button--inverse">Read Our Blog</a>
+            @endslot
+        @endcomponent
+    </div>
+</div>
 @endsection

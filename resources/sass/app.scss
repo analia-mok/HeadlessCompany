@@ -9,8 +9,13 @@
 
 // Partials
 @import 'partials/nav';
+@import 'partials/footer';
 
 // Components
 @import 'components/card';
 @import 'components/single';
 @import 'components/download-form';
+@import 'components/landing-cta';
+
+// Pages
+@import 'components/home';
