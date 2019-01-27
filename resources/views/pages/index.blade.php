@@ -3,6 +3,7 @@
 @extends('layout')
 
 @section('body')
+{{-- Hero --}}
 <div class="row">
     <div class="col-xs-12 col-md-12 home__hero">
         <div class="home__hero__content">
@@ -13,6 +14,7 @@
     </div>
 </div>
 <h1 class="home__section-header">{{ $page->servicesTitle }}</h1>
+{{-- Services --}}
 <div class="row">
     @if( count($services) > 0 )
         @foreach($services as $service)
@@ -26,4 +28,20 @@
         @endforeach
     @endif
 </div>
+{{-- Resources CTA --}}
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        @component('components.landing-cta', [
+            'entries'   => $resources,
+            'align'     => 'right'
+            ])
+            @slot('description')
+            <h2>{{ $page->resourcesTitle }}</h2>
+            <p>{{ $page->resourcesDescription }}</p>
+            @endslot
+        @endcomponent
+    </div>
+</div>
+{{-- Latest Blog Posts CTA --}}
+<div class="row"></div>
 @endsection

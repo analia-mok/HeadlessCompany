@@ -10817,6 +10817,94 @@ nav .navbar .nav-item {
   cursor: pointer;
 }
 
+.landing-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+.landing-cta__description {
+  flex: 1 1 calc(1/3 * 100%);
+}
+
+.landing-cta__entries {
+  flex: 1 1 calc(2/3 * 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-cta__entries__card {
+  flex: 1 1 50%;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.landing-cta__entries__card:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.landing-cta__entries__card:hover .landing-cta__entries__card__overlay {
+  opacity: 0.8;
+}
+
+.landing-cta__entries__card img,
+.landing-cta__entries__card__overlay,
+.landing-cta__entries__card__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.5s;
+}
+
+.landing-cta__entries__card__overlay {
+  z-index: 1;
+  background-color: #2D2D2D;
+  opacity: 0.6;
+}
+
+.landing-cta__entries__card__content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+}
+
+.landing-cta__entries__card__content:hover {
+  text-decoration: none;
+}
+
+.landing-cta__entries__card__content span,
+.landing-cta__entries__card__content h3 {
+  color: #FFFFFF;
+}
+
+.landing-cta__entries__card__content span {
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
 .home__hero {
   background-color: #4A69BD;
   padding: 0 5rem;

@@ -16,12 +16,16 @@ class ContentfulQuery
         $this->client = $client;
     }
 
-    public function getEntriesByContentType($contentType)
+    public function getEntriesByContentType($contentType, $limit = -1)
     {
         $query = new \Contentful\Delivery\Query();
         $query->setContentType($contentType)
             ->orderBy('sys.updatedAt')
             ->setInclude(2);
+
+        if ($limit > 0) {
+            $query->setLimit($limit);
+        }
 
         return $this->client->getEntries($query);
     }
