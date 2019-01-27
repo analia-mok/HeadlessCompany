@@ -10613,6 +10613,62 @@ nav .navbar .nav-item {
   height: 10px;
 }
 
+.footer {
+  background-color: #4A69BD;
+  color: #FAFAFA;
+  margin-top: 5rem;
+  padding: 10rem 3rem;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 5rem 1rem;
+  }
+}
+
+.footer__links,
+.footer__social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li a,
+.footer__social-links li a {
+  padding: 1rem 2.5rem;
+  color: #FAFAFA;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.footer__links li object,
+.footer__social-links li object {
+  margin: 0 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .footer__links {
+    flex-wrap: wrap;
+  }
+
+  .footer__links li {
+    flex: 1 1 100%;
+  }
+}
+
+.footer p {
+  margin: 3rem 0;
+  color: #FAFAFA;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
 .card {
   background-color: #FFFFFF;
   border: none;
@@ -10834,7 +10890,7 @@ nav .navbar .nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10rem 0;
+  margin: 10rem 0 0;
 }
 
 .landing-cta__description {

@@ -1,0 +1,53 @@
+.footer {
+    background-color: $blue;
+    color: $white;
+    margin-top: 5rem;
+    padding: 10rem 3rem;
+    text-align: center;
+
+    @include media-breakpoint-down(md){
+        padding: 5rem 1rem;
+    }
+
+    &__links,
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+
+        li {
+            a{
+                padding: 1rem 2.5rem;
+                color: $white;
+                font-family: $secondary-font;
+                font-size: 1.8rem;
+                font-weight: $semi-bold;
+            }
+
+            object {
+                margin: 0 1rem;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    &__links {
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+
+            li {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    p {
+        margin: 3rem 0;
+        color: $white;
+        font-family: $secondary-font;
+        font-size: 1.8rem;
+        font-weight: $semi-bold;
+    }
+}
