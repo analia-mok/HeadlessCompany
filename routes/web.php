@@ -23,5 +23,8 @@ Route::get('/case-study/{slug}', 'CaseStudiesController@show');
 Route::get('/ebooks', 'EbooksController@index');
 Route::get('/ebook/{slug}', 'EbooksController@show');
 
+Route::get('/careers', 'CareersController@index');
+Route::get('/career/{slug}', 'CareersController@show');
+
 Route::get('/blog', 'BlogPostController@index');
 Route::get('/blog/{slug}', 'BlogPostController@show');

@@ -11099,3 +11099,11 @@ nav .navbar .nav-item {
   margin: 2rem 0;
 }
 
+.careers__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
