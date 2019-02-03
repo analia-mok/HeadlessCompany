@@ -10,13 +10,15 @@ be features implemented in master that have not yet been deployed to Heroku.
 
 # Project Setup
 
-This project was configured primarily for Homestead. If you would like to use Homestead, simply ensure
-that you have Vagrant and its dependencies installed. If you are on Windows, add the following line to your
-hosts (C:\Windows\System32\drivers\etc) files.
+This project was configured primarily for Homestead, so you wil have to generate your own `Homstead.yaml` file.
+If you would like to use Homestead, simply ensure that you have Vagrant and its dependencies installed.
+If you are on Windows, add the following line to your hosts (C:\Windows\System32\drivers\etc) files.
 
 ```
 127.0.0.1   headlesscompany.local
 ```
+
+Replace the IP address with the IP found in your Homestead.yaml file.
 
 Next, from the root of this project, run `composer install` followed by a `npm install`
 
