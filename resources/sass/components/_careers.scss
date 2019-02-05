@@ -1,0 +1,41 @@
+.careers {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__careers {
+    width: 80%;
+    margin: 0 auto;
+
+    &__section {
+      margin-bottom: 2rem;
+
+      h2 {
+        margin: 4rem 0 2rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          border-bottom: 2px solid $light-grey;
+          padding: 1.5rem 1rem 1.5rem 0;
+          color: $dark-grey;
+
+          a {
+            display: inline-block;
+            color: $waterfall;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
