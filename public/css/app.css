@@ -11105,5 +11105,37 @@ nav .navbar .nav-item {
   justify-content: center;
   align-content: center;
   text-align: center;
+  margin-bottom: 8rem;
+}
+
+.careers__careers {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.careers__careers__section {
+  margin-bottom: 2rem;
+}
+
+.careers__careers__section h2 {
+  margin: 4rem 0 2rem;
+}
+
+.careers__careers__section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.careers__careers__section ul li {
+  display: flex;
+  border-bottom: 2px solid #C4C4C4;
+  padding: 1.5rem 1rem 1.5rem 0;
+  color: #333333;
+}
+
+.careers__careers__section ul li a {
+  display: inline-block;
+  color: #38ADA9;
+  margin-left: auto;
 }
 

@@ -19,7 +19,7 @@
               <h2>{{ $dept['title'] }}</h2>
               <ul>
                 @foreach($dept['listings'] as $listing)
-                  <li><a href="/career/{{ $listing->slug }}">{{ $listing->jobTitle }}</a></li>
+                  <li><span>{{ $listing->jobTitle }}</span><a href="/career/{{ $listing->slug }}">Apply Now</a></li>
                 @endforeach
               </ul>
             </section>
