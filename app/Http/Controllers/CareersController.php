@@ -27,7 +27,7 @@ class CareersController extends Controller
     {
         $entries = $this->CQUERY->getEntriesByContentType('jobListing');
 
-        // TODO: Organize by department
+        // Organize by department
         $departments = [];
 
         foreach ($entries as $entry) {

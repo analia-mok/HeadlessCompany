@@ -25,6 +25,7 @@
 
       h2 {
         margin: 4rem 0 2rem;
+        color: $grey;
       }
 
       ul {
@@ -41,9 +42,29 @@
             display: inline-block;
             color: $waterfall;
             margin-left: auto;
+            font-weight: $semi-bold;
           }
         }
       }
+    }
+  }
+}
+
+// Single Career Page
+.career {
+  h2 {
+    color: $blue;
+  }
+
+  h3 {
+    margin: 2rem 0;
+  }
+
+  &__location {
+    margin: 2rem 0;
+
+    &__remote {
+      color: $navy;
     }
   }
 }

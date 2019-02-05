@@ -11131,6 +11131,7 @@ nav .navbar .nav-item {
 
 .careers__careers__section h2 {
   margin: 4rem 0 2rem;
+  color: #555;
 }
 
 .careers__careers__section ul {
@@ -11149,5 +11150,22 @@ nav .navbar .nav-item {
   display: inline-block;
   color: #38ADA9;
   margin-left: auto;
+  font-weight: 600;
+}
+
+.career h2 {
+  color: #4A69BD;
+}
+
+.career h3 {
+  margin: 2rem 0;
+}
+
+.career__location {
+  margin: 2rem 0;
+}
+
+.career__location__remote {
+  color: #1E3799;
 }
 
