@@ -11113,6 +11113,18 @@ nav .navbar .nav-item {
   margin: 0 auto;
 }
 
+@media (max-width: 991.98px) {
+  .careers__careers {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .careers__careers {
+    width: 100%;
+  }
+}
+
 .careers__careers__section {
   margin-bottom: 2rem;
 }
