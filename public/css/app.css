@@ -11222,3 +11222,9 @@ nav .navbar .nav-item {
   height: auto;
 }
 
+@media (max-width: 991.98px) {
+  .person img {
+    margin-bottom: 2rem;
+  }
+}
+
