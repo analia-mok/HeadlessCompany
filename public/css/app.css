@@ -10598,6 +10598,12 @@ nav .navbar ul .dropdown-item a:hover {
   color: #4A69BD;
 }
 
+nav .navbar ul .nav-item a:active,
+nav .navbar ul .dropdown-item a:active {
+  color: #4A69BD;
+  background-color: #FAFAFA;
+}
+
 nav .navbar ul li.dropdown:hover > .dropdown-menu {
   display: block;
 }
@@ -10883,7 +10889,7 @@ nav .navbar .nav-item {
 .download-form form .button {
   padding: 1rem;
   margin-top: 2rem;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .landing-cta {

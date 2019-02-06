@@ -18,6 +18,10 @@ nav {
                 &:hover {
                     color: $blue;
                 }
+                &:active {
+                    color: $blue;
+                    background-color: $white;
+                }
             }
 
             li.dropdown:hover > .dropdown-menu {
