@@ -1,0 +1,61 @@
+.about {
+  &__header {
+    h1 {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    div {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__employees {
+    &__header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    &__container {
+      &__employee {
+        margin-bottom: 6rem;
+        text-align: center;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        &__content {
+          padding: 2rem 0;
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.16);
+
+          h3 {
+            margin: 0;
+          }
+
+          span {
+            font-weight: $semi-bold;
+            color: $waterfall;
+          }
+        }
+      }
+    }
+  }
+}
+
+.person {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include media-breakpoint-down(md){
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}
