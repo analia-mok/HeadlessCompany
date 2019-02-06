@@ -11175,3 +11175,45 @@ nav .navbar .nav-item {
   color: #1E3799;
 }
 
+.about__header h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about__header div {
+  margin-bottom: 5rem;
+}
+
+.about__employees__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about__employees__container__employee {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.about__employees__container__employee:hover {
+  text-decoration: none;
+}
+
+.about__employees__container__employee img {
+  width: 100%;
+  height: auto;
+}
+
+.about__employees__container__employee__content {
+  padding: 2rem 0;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.about__employees__container__employee__content h3 {
+  margin: 0;
+}
+
+.about__employees__container__employee__content span {
+  font-weight: 600;
+  color: #38ADA9;
+}
+

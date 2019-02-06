@@ -19,7 +19,15 @@ class AboutController extends Controller
 
     public function index()
     {
-        // TODO
+        $entry = $this->CQUERY->getEntriesByContentType('aboutPage', 1);
+
+        if (count($entry) <= 0) {
+            abort(404);
+        }
+
+        return view('about.index', [
+            'entry' => $entry[0],
+        ]);
     }
 
     public function show($person_name)
