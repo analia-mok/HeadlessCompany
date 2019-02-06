@@ -11217,3 +11217,8 @@ nav .navbar .nav-item {
   color: #38ADA9;
 }
 
+.person img {
+  width: 100%;
+  height: auto;
+}
+

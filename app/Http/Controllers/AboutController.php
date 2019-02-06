@@ -12,9 +12,15 @@ class AboutController extends Controller
      */
     private $CQUERY;
 
+    /**
+     * @var Contentful\RichText\Renderer
+     */
+    private $renderer;
+
     public function __construct(CQuery $query)
     {
         $this->CQUERY = $query;
+        $this->renderer = new \Contentful\RichText\Renderer();
     }
 
     public function index()
@@ -32,6 +38,15 @@ class AboutController extends Controller
 
     public function show($person_name)
     {
-        // TODO
+        $entry = $this->CQUERY->getEntry('employee', $person_name);
+
+        if ($entry === null) {
+            abort(404);
+        }
+
+        return view('about.show', [
+            'entry'     => $entry,
+            'renderer'  => $this->renderer,
+        ]);
     }
 }
