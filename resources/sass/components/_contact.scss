@@ -1,0 +1,28 @@
+.contact {
+  @include media-breakpoint-down(md){
+    margin-bottom: 2rem;
+  }
+
+  @include media-breakpoint-down(sm){
+    text-align: center;
+    .form {
+      margin-bottom: 6rem;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    margin: 2rem 0 4rem;
+
+  }
+
+  &__address,
+  &__phone,
+  &__email {
+    margin-bottom: 2rem;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}

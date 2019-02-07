@@ -7,7 +7,7 @@
                     <li><a href="/resources">Resources</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/careers">Careers</a></li>
-                    <li><a href="/contact-is">Contact Us</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
                 </ul>
                 <p>Copyright &copy; 2019 Headless Company</p>
                 <ul class="footer__social-links">

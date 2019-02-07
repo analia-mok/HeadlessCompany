@@ -1,4 +1,4 @@
-<div class="download-form">
+<div class="download-form form">
     <h3 class="download-form__title">{{ $slot }}</h3>
     <form method="POST" action="#">
         @csrf

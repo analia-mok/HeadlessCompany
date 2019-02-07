@@ -10852,13 +10852,13 @@ nav .navbar .nav-item {
   }
 }
 
-.download-form h3 {
+.form h3 {
   position: relative;
   padding-bottom: 1.3rem;
   margin-bottom: 2rem;
 }
 
-.download-form h3:after {
+.form h3:after {
   position: absolute;
   bottom: 0;
   display: block;
@@ -10868,15 +10868,16 @@ nav .navbar .nav-item {
   background-color: #FA983A;
 }
 
-.download-form form {
+.form form {
   display: flex;
   flex-direction: column;
 }
 
-.download-form form input[type=text],
-.download-form form input[type=email],
-.download-form form input[type=tel],
-.download-form form select {
+.form form input[type=text],
+.form form input[type=email],
+.form form input[type=tel],
+.form form textarea,
+.form form select {
   display: block;
   border: 1px solid #C4C4C4;
   padding: 1rem 2rem;
@@ -10886,7 +10887,7 @@ nav .navbar .nav-item {
   font-size: 1.6rem;
 }
 
-.download-form form .button {
+.form form .button {
   padding: 1rem;
   margin-top: 2rem;
   cursor: not-allowed;
@@ -11226,5 +11227,38 @@ nav .navbar .nav-item {
   .person img {
     margin-bottom: 2rem;
   }
+}
+
+@media (max-width: 991.98px) {
+  .contact {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact {
+    text-align: center;
+  }
+
+  .contact .form {
+    margin-bottom: 6rem;
+    text-align: left;
+  }
+}
+
+.contact__description {
+  margin: 2rem 0 4rem;
+}
+
+.contact__address,
+.contact__phone,
+.contact__email {
+  margin-bottom: 2rem;
+}
+
+.contact__address h3,
+.contact__phone h3,
+.contact__email h3 {
+  margin-bottom: 1rem;
 }
 
