@@ -6,6 +6,9 @@
     @include media-breakpoint-down(sm){
         margin-top: 3rem;
     }
+}
+
+.form {
 
     h3 {
         position: relative;
@@ -29,6 +32,7 @@
         input[type=text],
         input[type=email],
         input[type=tel],
+        textarea,
         select {
             display: block;
             border: 1px solid $light-grey;

@@ -32,3 +32,5 @@ Route::get('/career/{slug}', 'CareersController@show');
 
 Route::get('/blog', 'BlogPostController@index');
 Route::get('/blog/{slug}', 'BlogPostController@show');
+
+Route::get('/contact-us', 'ContactController@index');
